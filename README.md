@@ -1,2 +1,1 @@
-# python_template
-python_template
+# Python Flask template with Dockerfile
