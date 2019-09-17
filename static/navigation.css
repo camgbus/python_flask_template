@@ -1,0 +1,15 @@
+.navbar {
+    height: 50px;
+    padding: 5px 10px 5px 10px;
+}
+
+.search-form {
+
+}
+.nav-item{
+    color: var(--middle-gray);
+}
+
+.nav-item.active {
+    color: var(--darker-gray);
+}

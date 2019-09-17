@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    width: 100%;
+    height: 100%;
+  }
+
+.error {
+    padding-top: 20px;
+    min-height: 40px;
+}
+
+#auth-container {
+    position: fixed;
+    min-width: 20vw;
+    left: 40vw;
+    top: 15vh;
+}
+
+#login-logo {
+    height: 78px;
+    width: 102px;
+    margin-bottom: 30px;
+}
+
+#login-form {
+    height: 30vh;
+}
+
+#login-btn {
+    background-color: var(--dark-gray);
+    border-color: var(--dark-gray);
+}

@@ -1,0 +1,95 @@
+ {% extends "r_base.html" %} {%block scripts %}
+ <script>
+     app.controller('myCtrl', function ($scope, $log, $window, $http) {
+         $scope.$log = $log;
+         $scope.$window = $window;
+         $scope.title = '{{title}}'
+         $scope.f = function ($event, arg) {
+             alert('Hello from Angular')
+         }
+     })
+     app.config(['$interpolateProvider', function ($interpolateProvider) {
+         $interpolateProvider.startSymbol('{a');
+         $interpolateProvider.endSymbol('a}');
+     }]);
+ </script>
+
+ {% endblock %} {% block content %}
+
+ <div ng-controller="myCtrl" class="full-height">
+     <div class="jumbotron text-center">
+         <h1>{{ title }}</h1>
+     </div>
+
+     <div class="container-fluid">
+        <div class="row full-height-row">
+            <div class="col-md-4">
+                <div class="card full-height-card">
+                     <div class="card-body">
+                         <h3>Column 1</h3>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-md-8">
+                 <div class="card full-height-card">
+                     <div class="card-body">
+                         <h3>Column 1</h3>
+                         <div class="container">
+                            <div class="row">
+                              <div class="col-4">
+                                    <div class="card grid-card">
+                                            <div class="card-body">
+                                                tile
+                                            </div>
+                                    </div>
+                              </div>
+                              <div class="col-4">
+                                    <div class="card grid-card">
+                                            <div class="card-body">
+                                                tile
+                                            </div>
+                                    </div>
+                              </div>
+                              <div class="col-4">
+                                    <div class="card grid-card">
+                                            <div class="card-body">
+                                                tile
+                                            </div>
+                                    </div>
+                              </div>
+                              <div class="col-4">
+                                    <div class="card grid-card">
+                                            <div class="card-body">
+                                                tile
+                                            </div>
+                                    </div>
+                              </div>
+                              <div class="col-4">
+                                    <div class="card grid-card">
+                                            <div class="card-body">
+                                                tile
+                                            </div>
+                                    </div>
+                              </div>
+                              <div class="col-4">
+                                    <div class="card grid-card">
+                                            <div class="card-body">
+                                                tile
+                                            </div>
+                                    </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+ {% endblock %} {% block static %}
+ {% endblock %}

@@ -1,5 +1,35 @@
+:root{
+    --main-bg-color: #f3f3f3;
+    --lightest-gray: #fcfcfc;
+    --lighter-gray: #e9e7e7;
+    --light-gray: #d3d3d3;
+    --middle-gray: #646464;
+    --dark-gray: #4f4c4c;
+    --darker-gray: #333333;
+    --darkest-gray: #1a1a1a;
+	--light-text-color: #fff;
+    --text-color: #1a1a1a;
+	--text-color-light: #646464;
+    --font-size: 1rem;
+}
 html,body,.container {
     height:100%;
+    font-size: var(--font-size);
+}
+
+.h5, h5 {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.h3, h3 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.h1, h1 {
+    font-size: 2.2rem;
+    color: var(--text-color);
 }
 
 #logo {
@@ -16,6 +46,7 @@ html,body,.container {
 }
 
 /* Remove the lower margin of the jumbotron and reduce passing */
+
 .jumbotron {
     padding: 30px;
     margin: 0;
@@ -24,4 +55,37 @@ html,body,.container {
 /* Have columns be padded to the top and bottom, and with 10px instead of 15px */
 .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
     padding: 10px;
+}
+
+/* Tables */
+
+table {
+    border: none;
+    margin-top: 20px;
+}
+
+th, td, .table th, .table td {
+    font-size: 0.7rem;
+    border-top: 1px solid  var(--lighter-gray);
+    border-bottom: none;
+    padding: .4rem;
+    vertical-align: middle;
+}
+
+/* Have row fill the end of the page */
+.full-height-row {
+    min-height: calc(100vh - 170px); /* 160=50 (navbar) + 10 (navbar padding) + 80 (title box) +10+10 (card padding) + 10 to make sure file does not appear*/
+}
+
+.full-height-card {
+    height: 100%;
+}
+
+
+
+.grid-card {
+    height: 30vh;
+    width: 100%;
+
+
 }
